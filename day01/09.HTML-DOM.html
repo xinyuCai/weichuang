@@ -1,0 +1,14 @@
+document.querySelector("#div1");
+document.querySelectorAll(".aa");
+
+与getElementById的区别：
+getXXXByXXX 获取的是动态集合，querySelector获取的是静态集合
+
+lis = ul.getElementsByTagName("li");
+for(var i = 0; i < lis.length ; i++){
+     ul.appendChild(document.createElement("li"));
+}
+每一次调用 lis 都会重新对文档进行查询
+
+如果只要一次查找就可得到元素时，首选getXXXByXXX
+如果需要经过多级查找，才能得到元素时，首选querySelector

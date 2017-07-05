@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		img{
+			border: 0;
+		}
+		#container{
+			position: relative;
+			width: 220px;
+			height: 220px;
+			margin: 100px auto;
+		}
+		#imgs img{
+			display: none;
+		}
+		#imgs .selected{
+			display: block;
+		}
+		#nav li, #left, #right{
+			width: 20px;
+			height: 20px;
+			background: #000;
+			color: #fff;
+			float: left;
+			margin-right: 5px;
+			text-align: center;
+			line-height: 20px;
+			cursor: pointer;
+		}
+		#nav .selected{
+			background: orange;
+		}
+		#nav{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+		#arrows{
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+		}
+	</style>
+</head>
+<body id="body">
+	<div id="container">
+		<div id="imgs">
+			<img src="imgs/1.jpg" alt="" class="selected">
+			<img src="imgs/2.jpg" alt="">
+			<img src="imgs/3.jpg" alt="">
+			<img src="imgs/4.jpg" alt="">
+		</div>
+		<ul id="nav">
+			<li class="selected">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+		<div id="arrows">
+			<div id="left">&lt;</div>
+			<div id="right">&gt;</div>
+		</div>
+	</div>
+
+	<script>
+		var oNav = document.getElementById("nav");
+		var aLi = oNav.getElementsByTagName("li");
+		var oImgs = document.getElementById("imgs");
+		var aImgs = oImgs.getElementsByTagName("img");
+		var oLeft = document.getElementById("left");
+		var oRight = document.getElementById("right");
+		var oContainer = document.getElementById("container");
+		var nowIndex = 0;//当前显示图片的索引
+		var timer;//自动播放的定时器
+		for(var i=0; i<aLi.length; i++){
+			aLi[i].index = i;//给每个li自定义属性index，保存住当时的i的值
+			//绑定鼠标划入事件
+			aLi[i].onmouseover = function(){
+				nowIndex = this.index;
+				changeImg();
+			};
+		}
+		oLeft.onclick = oRight.onclick = function(){
+			if(this == oRight){
+				nowIndex++;
+				if(nowIndex == aLi.length){
+					nowIndex = 0;
+				}
+			}else{
+				nowIndex--;
+				if(nowIndex == -1){
+					nowIndex = aLi.length - 1;
+				}
+			}
+			changeImg();
+		}; 
+
+		play();
+
+		oContainer.onmouseover = function(){
+			clearInterval(timer);
+		};
+		oContainer.onmouseout = function(){
+			play();
+		};
+
+		function play(){
+			timer = setInterval(function(){
+				oRight.onclick();
+			}, 1000);
+		}
+
+		function changeImg(){
+			for(var i=0; i<aLi.length; i++){
+				aLi[i].className = "";
+				aImgs[i].className = "";
+			}
+			aLi[nowIndex].className = "selected";
+			aImgs[nowIndex].className = "selected";
+		}
+
+		var oBody = document.getElementById("body");
+		oBody.onselectstart = function(){
+			return false;//阻止浏览器的默认行为
+		};
+	</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	    *{
+            padding: 0px;
+            margin: 0px;
+	    }
+	    #tab{
+	    	width: 500px;
+	    	height: 30px;
+	    	margin:50px auto;
+	    }
+		li{
+			list-style: none;
+			width: 120px;
+			height: 30px;
+			float: left;
+			background-color: red;
+			color: white;
+			line-height: 30px;
+			margin-right: 5px;
+			text-align: center;
+			cursor: pointer;
+		}
+		li:hover{
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+    <div id="div1">div</div>
+    <div id="tab">
+        <ul id="nav">
+    	    <li id="li1">aaa</li>
+    	    <li>bbb</li>
+    	    <li>ccc</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var oDiv = document.getElementById("div1");
+        var oTab = document.getElementById("tab");
+        var oLi1 = document.getElementById("li1"); 
+        var oNav = document.getElementById("nav");   
+
+
+
+        /*事件三要素：事件对象e
+                      事件源target(注意事件源与事件对象的区别)
+                      事件处理函数function
+        */
+        /*oNav.onclick = function(e){
+            var target = e.target || window.event.srcElement;
+            // e.clientX  e.clientY   参照点会随之滚动条的移动而移动
+            // e.pageX e.pageY        不随之滚动条的移动而移动
+            // e.keycode || e.which   按键码
+            console.log(this);        //指向ul
+            console.log(target);      //指li
+        };*/
+
+
+
+        /*事件委托、事件代理后生成元素的事件绑定问题*/
+        /*绑定事件，默认值是false:事件冒泡,true:事件捕获.先捕获后冒泡，不支持早期ie*/
+        /*oTab.addEventListener("click", function(e){
+            //var target = e.target || window.event.srcElement;
+            //console.log(target.innerHTML);
+            console.log("ul冒泡");
+        }, false);
+        oTab.addEventListener("click", function(e){
+            //var target = e.target || window.event.srcElement;
+            //console.log(target.innerHTML);
+            console.log("ul捕获");
+        }, true);
+        oLi1.addEventListener("click", function(){
+            console.log("li1冒泡");
+        }, false);
+        oLi1.addEventListener("click", function(){
+            console.log("li1捕获");
+        }, true);*/       
+        /*oLi1.attachEvent("onclick", function(){
+            alert(1);
+            console.log(this);//window
+        });*/
+        /*oLi1.attachEvent("onclick", function(){
+            alert(2);
+        });*/
+        
+        /*oLi1.addEventListener("click", function(){
+            alert(1);
+            console.log(this);
+        }, false);*/
+        /*oLi1.addEventListener("click", function(){
+            alert(2);
+        }, false);*/
+
+
+
+        /*将事件绑定封装成一个方法，并解决了兼容性问题*/
+        /*function addEvent(elem, type, handler){
+            if(elem.addEventListener){
+                elem.addEventListener(type, handler);
+            }else if(elem.attachEvent){
+                elem.attachEvent("on" + type, handler);
+            }else{
+                elem["on" + type] = handler;
+            }
+        }
+        addEvent(oLi1, "click", function(){
+            console.log(this);
+            alert(123);
+        });*/
+
+
+
+        /*定义对象*/
+        /*法1*/
+        /*var obj1 = new Object();
+        obj1.name = "zhangsan";
+        obj1.age = 20;
+        obj1.eat = function(){
+            console.log(this);
+        };
+        obj1.eat();*/
+        /*法2*/
+        /*var obj2 = {
+            name : "lisi",
+            age : 18,
+            code : function(){
+                alert("coding");
+            }
+        };
+        var p = "name";
+        //输出name
+        console.log(obj2[p]);*/
+
+
+
+        /*改变this指向*/
+        //addEventListener的this指向当前对象
+        //attachEvent的this指向windows
+        function fn(arg1, arg2){
+            //this指向windows
+            console.log(this);
+            console.log(arg1);
+            console.log(arg2);
+        }
+        var obj = {
+            name: "zhangsan",
+            age: 20
+        };
+        // fn(1, 2);
+        // fn.call(obj, 1, 2);
+        // fn.apply(obj, [1, 2]);
+        // fn.bind(obj, 1, 2)();
+        // call(obj, a, b);
+        // apply(obj, [a, b]);
+        // bind(obj, a, b);
+        /*oDiv.addEventListener("click", function(){
+            console.log(this);
+        }.bind(obj), false);*/
+    </script>
+</body>
+</html>

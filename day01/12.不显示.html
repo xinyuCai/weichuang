@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			
+		}
+		#div1{
+			background: #f00;
+			/*1.元素不在*/
+			display: none;
+			/*2.元素还在，事件也在*/
+			/*opacity: 0;
+			filter: alpha(opacity=0);*/
+			/*3.元素还在，事件不在*/
+			/*visibility: hidden;*/
+		}
+		#div2{
+			background: #0f0;
+		}	
+	</style>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+
+	<script>
+		var oDiv1 = document.getElementById("div1");
+		oDiv1.onclick = function(){
+			alert(123);
+		};
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

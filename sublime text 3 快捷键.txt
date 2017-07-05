@@ -1,0 +1,6 @@
+emmet²å¼ş
+html:5 tab
+     4s
+div#idÖµ
+div.classÖµ
+div*4>p+span+img[src=img/$.jpg]

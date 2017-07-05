@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<img src="img/1.jpg" alt="" id="pic">
+	<script>
+	    /*懒加载*/
+	    /*window.onscroll = function(){
+			var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+			..........
+			..........
+		};*/
+
+		
+	    /*预加载*/
+	    window.onload = function(){
+            var count = 0;
+		    for(var i=1; i<=4; i++){
+			    var oImg = new Image();
+			    oImg.onload = function(){
+				    count++;
+				    if(count == 4){
+					    console.log("四张图片加载完成！");
+				    }
+			    };
+			    oImg.src = "img/"+ i +".jpg";
+			    console.log(oImg);
+		    }
+		};
+
+		/*var oPic = document.getElementById("pic");
+		oPic.onload = function(){
+			console.log(oPic.offsetWidth);
+		};*/
+	</script>
+</body>
+</html>
