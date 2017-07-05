@@ -1,0 +1,27 @@
+https://github.com/xiecheng328/nefu2017.git
+
+1、https://github.com  注册账号  sign up
+2、安装webstorm
+	注册：license server
+	http://idea.iteblog.com/key.php
+
+3、安装git
+4、  webstorm->file->settings->version control->git->path to git
+指向你安装的git的路径：c://progress file/git/bin/git.exe
+点击test  如果弹出执行成功 表示安装完成
+
+5、webstorm上面菜单vcs->check out from.... ->github
+	填写你自己的github账号和密码
+
+
+
+
+
+
+
+
+
+
+
+
+

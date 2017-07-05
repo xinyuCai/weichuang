@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /*判断是pc端访问还是手机端访问*/
+    function isPc(){
+        /*navigator.userAgent可以查看访问网站的设备的信息*/
+        if(navigator.userAgent.indexOf("iPhone") != -1){
+            return false;
+        }
+        return true;
+    }
+    if(isPc()){
+        location.href = "http://www.taobao.com";
+    }else{
+        location.href = "http://m.taobao.com";
+    }
+
+</script>
+</body>
+</html>
