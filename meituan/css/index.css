@@ -63,12 +63,18 @@
 #guide{
     height: 3.6rem;
     width: 100%;
-    background: #dedcd5;
     overfloat: hidden;
     position: relative;
 }
 #guide ul{
     width:200%;
+    position: absolute;
+    left: 0;
+    -webkit-transition: left 1s ease;
+    -moz-transition: left 1s ease;
+    -ms-transition: left 1s ease;
+    -o-transition: left 1s ease;
+    transition: left 1s ease;
 }
 #guide li{
     width:10%;
@@ -83,7 +89,8 @@
 #nav{
     position: absolute;
     bottom: 0.25rem;
-
+    left: 50%;
+    transform: translateX(-50%);
 }
 #nav span{
     width: 0.16rem;
@@ -94,6 +101,10 @@
     -ms-border-radius: 50%;
     border-radius: 50%;
     float: left;
+    margin-right: 0.15rem;
     background-color: #f0efee;
+}
+#nav span.active{
+    background: #06c1ae;
 }
 /*guide结束*/
