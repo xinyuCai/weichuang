@@ -61,9 +61,11 @@
 
 /*guide开始*/
 #guide{
-    height: 2.5rem;
+    height: 3.6rem;
+    width: 100%;
     background: #dedcd5;
     overfloat: hidden;
+    position: relative;
 }
 #guide ul{
     width:200%;
@@ -72,9 +74,26 @@
     width:10%;
     text-align: center;
     float: left;
+    margin-top: 0.2rem;
 }
 #guide img{
     width: 0.8rem;
     height: 0.8rem;
+}
+#nav{
+    position: absolute;
+    bottom: 0.25rem;
+
+}
+#nav span{
+    width: 0.16rem;
+    height: 0.16rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    background-color: #f0efee;
 }
 /*guide结束*/
