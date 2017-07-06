@@ -5,6 +5,11 @@
     line-height: 1.02rem;
     display: -webkit-box;
     display: -moz-box;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 #city{
     width: 1.2rem;
@@ -70,6 +75,8 @@
     -o-background-size: 6.4rem 1rem;
     -ms-background-size: 6.4rem 1rem;
     background-size: 6.4rem 1rem;
+
+    margin-top: 1.02rem;
 }
 /*banner结束*/
 
@@ -79,6 +86,7 @@
     width: 100%;
     overfloat: hidden;
     position: relative;
+    background: #ffffff;
 }
 #guide ul{
     width:200%;
@@ -126,6 +134,7 @@
 /*导购开始*/
 #activity{
     display: -webkit-box;
+    display: -moz-box;
     text-align: center;
     margin: 0.3rem 0;
     background-color: #fff;
@@ -161,12 +170,85 @@
 }
 /*导购结束*/
 
+/*猜你喜欢开始*/
 #guess{
-
+    background: #ffffff;
+    padding: 0 .2rem;
 }
 #guess h3{
     color: #333;
     font-size: .34rem;
-    border-bottom: 1px solid ;
-    padding: .2rem;
+    border-bottom: 1px solid #ccc;
+    padding: .2rem 0;
 }
+#menu li{
+    height: 1.8rem;
+    padding: .3rem 0;
+    border-bottom: 1px solid #ccc;
+}
+#menu img{
+    width: 1.8rem;
+    height: 1.8rem;
+    float: left;
+}
+#menu .detail{
+    float: left;
+    margin-left: .3rem;
+}
+#menu .detail-name{
+    font-size: .3rem;
+    font-weight: 400;
+    padding: 0.1rem 0;
+}
+#menu .detail-desc{
+    margin-bottom: .2rem;
+}
+#menu .price{
+    font-size:.38rem;
+    color: #06c1ae;
+}
+#menu .sold{
+    margin-left: .6rem;
+}
+/*猜你喜欢结束*/
+
+/*footer开始*/
+#footer{
+    height: 1rem;
+    width: 100%;
+    padding: .2rem 0;
+    background: rgba(0,0,0,0.8);
+    display: -webkit-box;
+    display: -moz-box;
+    position: fixed;
+    bottom: 0;
+}
+#footer .logo,#footer div,#footer .download{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+}
+#footer .logo{
+    width: 1rem;
+    height: 1rem;
+    margin-left: .4rem;
+}
+#footer div{
+    color: #fff;
+    margin: .2rem 0 0 .3rem;
+}
+#footer .download{
+    width: 1.7rem;
+    height: .7rem;
+    background-color: transparent;
+    border: 1px solid #06c1ae;
+    color: #06c1ae;
+    padding: 0;
+    text-shadow: none;
+    display: inline-block;
+    font-size: .28rem;
+    margin-right: .4rem;
+}
+/*footer结束*/
