@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <!--导入自定义主题-->
+    <!--<link rel="stylesheet" href="mytheme.css" />-->
+    <!--<link rel="stylesheet" href="jquery.mobile.icons.min.css" />-->
+    <script src="jquery-1.12.4.min.js"></script>
+    <!-- <script src="index.js"></script> 注意顺序 -->
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="page-one" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h1>这是page one</h1>
+        <a href="#anylink" data-role="button" data-icon="search" data-iconpos="notext">搜索</a>
+    </div>
+    <div role="main" class="ui-content">
+        <a href="#page-two" data-transition="fade" data-role="button" data-inline="true">转到页面二</a>
+        <a href="page3.html" data-rel="dialog" data-role="button" data-inline="true">转到页面三</a>
+        <a href="#" data-role="button" data-shadow="true">按钮</a>
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>this is footer</h1>
+        <a href="#" data-role="button">微博</a>
+        <a href="#" data-role="button">腾讯</a>
+        <a href="#" data-role="button">QQ空间</a>
+    </div>
+</div>
+
+<div data-role="page" id="page-two">
+    <div data-role="header">
+        <h1>这是page two</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <a href="#page-one" data-transition="slide" data-direction="reverse">转到页面一</a>
+    </div>
+    <div data-role="footer">
+        <h1>this is footer</h1>
+    </div>
+</div>
+</body>
+</html>
