@@ -5,21 +5,55 @@ $(function(){
     //$(this):    this转换为$(this)(原生对象转换为jQuery对象)
     var $navSpan = $("#nav span");
     var $guideUl=$("#guide ul");
-    $navSpan.on("tap",function(){
-        $(this).addClass("active").siblings().removeClass("active");
+    function swipeGuide(index){
+        $navSpan.eq(index).addClass("active").siblings().removeClass("active");
         $guideUl.css({
-            left: -$(this).index() * $guideUl.width() / 2
+            left: -index * $guideUl.width() / 2
         });
+    }
+    $navSpan.on("tap",function(){
+        swipeGuide($(this).index());
     });
     $guideUl.on("swipeleft",function(){
-        $navSpan.eq(1).addClass("active").siblings().removeClass("active");
-        $guideUl.css({
-            left: -$guideUl.width() / 2
-        });
+        swipeGuide(1);
     }).on("swiperight",function(){
-        $navSpan.eq(0).addClass("active").siblings().removeClass("active");
-        $guideUl.css({
-            left: 0
-        });
+        swipeGuide(0)
     });
+
+    /*$("#go-top").on("tap",function(){
+        if($(window).scrollTop() <= 1){
+            return false;
+        }
+        $("body").animate({
+            scrollTop : 0
+        }, 500);
+        var top = $(this).css("top");
+        $(this).animate({
+            top: 0
+        }, 500, function(){
+            $(this).css("top", top);
+        });
+    });*/
+
+    var bShow = false;
+    $(window).on('scroll', function(){
+        console.log(1);
+        var scrollTop = document.documentElement.scrollTop
+            || document.body.scrollTop;
+        var top=$(window).height();
+        if(scrollTop >= top && bShow == false){
+            $('#go-top').fadeIn();
+            bShow = true;
+            console.log(Math.random());
+        }else if(scrollTop < top && bShow == true){
+            $('#go-top').fadeOut();
+            bShow = false;
+            console.log('--' + Math.random());
+        }
+    });
+    /*$('#go-top').on('click', function(){
+        $('body').animate({
+            scrollTop: 0
+        });
+    });*/
 });
