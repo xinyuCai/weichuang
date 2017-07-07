@@ -20,40 +20,31 @@ $(function(){
         swipeGuide(0)
     });
 
-    /*$("#go-top").on("tap",function(){
-        if($(window).scrollTop() <= 1){
-            return false;
+    var bShow = false;
+    $(document).on('scroll', function(){
+        var scrollTop = document.documentElement.scrollTop
+            || document.body.scrollTop;
+        if(scrollTop >= 200 && bShow == false){
+            /*$('#go-top').fadeIn();*/
+            $('#go-top').css("display","block");
+            bShow = true;
+            console.log("显示");
+        }else if(scrollTop < 200 && bShow == true){
+            /*$('#go-top').fadeOut();*/
+            $('#go-top').css("display","none");
+            bShow = false;
+            console.log("消失");
         }
-        $("body").animate({
-            scrollTop : 0
-        }, 500);
-        var top = $(this).css("top");
+    });
+    $('#go-top').on('tap', function(){
+        var bottom = $(this).css("bottom");
         $(this).animate({
             top: 0
         }, 500, function(){
-            $(this).css("top", top);
+            $(this).css("bottom", bottom);
         });
-    });*/
-
-    var bShow = false;
-    $(window).on('scroll', function(){
-        console.log(1);
-        var scrollTop = document.documentElement.scrollTop
-            || document.body.scrollTop;
-        var top=$(window).height();
-        if(scrollTop >= top && bShow == false){
-            $('#go-top').fadeIn();
-            bShow = true;
-            console.log(Math.random());
-        }else if(scrollTop < top && bShow == true){
-            $('#go-top').fadeOut();
-            bShow = false;
-            console.log('--' + Math.random());
-        }
-    });
-    /*$('#go-top').on('click', function(){
         $('body').animate({
             scrollTop: 0
-        });
-    });*/
+        },500);
+    });
 });

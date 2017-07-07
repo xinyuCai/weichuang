@@ -16,22 +16,24 @@
 <body>
 <div data-role="page" id="page-one" data-theme="a">
     <div data-role="header" data-position="fixed">
+        <a href="#" data-role="button" data-icon="home">首页</a>
         <h1>这是page one</h1>
-        <a href="#anylink" data-role="button" data-icon="search" data-iconpos="notext">搜索</a>
+        <a href="#anylink" data-role="button" data-icon="search" data-iconpos="notext"></a>
     </div>
     <div role="main" class="ui-content">
-        <a href="#page-two" data-transition="flow" data-role="button" data-inline="true">转到页面二</a>
+        <a href="#page-two" data-transition="slide" data-direction="reverse" data-role="button" data-inline="true">转到页面二</a>
         <a href="page3.html" data-rel="dialog" data-role="button" data-inline="true">转到页面三</a>
-        <a href="#" data-role="button" data-shadow="true">按钮</a>
+
 
     </div>
-    <div data-role="footer" data-position="fixed">
+    <div data-role="footer" class="ui-btn" data-position="fixed">
         <h1>this is footer</h1>
-        <a href="#" data-role="button">微博</a>
-        <a href="#" data-role="button">腾讯</a>
-        <a href="#" data-role="button">QQ空间</a>
+        <a href="#" data-role="button" data-icon="plus">微博</a>
+        <a href="#" data-role="button" data-icon="plus">腾讯</a>
+        <a href="#" data-role="button" data-icon="plus">QQ空间</a>
     </div>
 </div>
+
 
 <div data-role="page" id="page-two">
     <div data-role="header">

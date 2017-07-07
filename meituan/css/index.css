@@ -220,10 +220,11 @@
     color: #06c1ae;
 }
 #menu .sold{
-    margin-left: .1rem;
+    margin-left: .15rem;
 }
 /*猜你喜欢结束*/
 
+/*go-top开始*/
 #go-top{
     width: .8rem;
     height: .8rem;
@@ -244,6 +245,7 @@
     opacity: 0.6;
     display: none;
 }
+/*go-top结束*/
 
 /*footer开始*/
 #footer{
