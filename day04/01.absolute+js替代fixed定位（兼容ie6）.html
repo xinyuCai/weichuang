@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        #div1{
+            width: 100px;
+            height: 100px;
+            background: #ff0000;
+            position: absolute;
+            left: 10px;
+            /*position: fixed;
+            top: 500px;*/
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+
+<script>
+    var oDiv1 = document.getElementById("div1");
+    window.onscroll = function(){
+        var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        oDiv1.style.top = scrollTop + 500 + "px";
+    };
+</script>
+</body>
+</html>
