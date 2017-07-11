@@ -47,12 +47,26 @@
     opacity: 0.8;
 }
 #mine{
-    width: 0.6rem;
+    width: 1.2rem;
     margin: 0 0.2rem;
     color: #fff;
+}
+#mine div{
+    float: left;
+    width: 0.6rem;
+    height: 1rem;
     position: relative;
-
+}
+#mine div:first-child{
     background: url(../img/mine.png) no-repeat center 0.1rem;
+    -webkit-background-size: 0.48rem 0.48rem;
+    -moz-background-size: 0.48rem 0.48rem;
+    -o-background-size: 0.48rem 0.48rem;
+    -ms-background-size: 0.48rem 0.48rem;
+    background-size: 0.48rem 0.48rem;
+}
+#mine div:last-child{
+    background: url(../img/login.png) no-repeat right 0.1rem;
     -webkit-background-size: 0.48rem 0.48rem;
     -moz-background-size: 0.48rem 0.48rem;
     -o-background-size: 0.48rem 0.48rem;
@@ -61,7 +75,7 @@
 }
 #mine span{
     height:0.5rem;
-    font-size: .26rem;
+    font-size: .15rem;
     position: absolute;
     bottom: 0.3rem;
 }

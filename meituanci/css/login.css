@@ -1,0 +1,16 @@
+#header{
+    height: 1.02rem;
+    background: #06c1ae;
+    line-height: 1.02rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+#login-form{
+    margin-top: 1.02rem;
+    padding: 0 0.2rem
+}

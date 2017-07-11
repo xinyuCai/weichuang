@@ -6,12 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta charset="UTF-8">
     <title>团购详情</title>
+    <base href="<?php echo site_url();?>">
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/detail.css">
     <script src="js/rem.js"></script>
     <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/detail.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
 </head>
@@ -272,6 +274,7 @@
             </div>
             <div class="view-all">查看全部12345条评价</div>
         </div>
+        <div id="go-top"></div>
         <div style="height: 2rem;"></div>
     </div>
 

@@ -5,12 +5,14 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>我的美团</title>
+    <base href="<?php echo site_url();?>">
 	<link rel="shortcut icon" href="img/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/jquery.mobile-1.4.5.js"></script>
 	<title>我的美团</title>
@@ -25,7 +27,8 @@
 			<input type="text" name="" placeholder="请输入商家/品类/商圈">
 		</div>
 		<div id="mine">
-			<span>我的</span>
+            <div><span>我的</span></div>
+            <div><span>登录</span></div>
 		</div>
 	</div>
 
