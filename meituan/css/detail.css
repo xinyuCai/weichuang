@@ -367,7 +367,6 @@
 }
 #evaluate .evaluate-title .star{
     float: right;
-
 }
 #evaluate .evaluate-title .star img{
     width: 0.32rem;
@@ -405,9 +404,36 @@
 
 
 #evaluate .item .item-content{
-    margin-top: 1rem;
+    margin-top: .8rem;
     padding: .2rem 0;
-    border-top: 1px solid #ccc;
+}
+#evaluate.item .item-img{
+    margin: 0.2rem 0;
+}
+#evaluate.item .item-img img{
+    width: 1.1rem;
+    height: 1.1rem;
+    float: left;
+    margin-right: 0.1rem;
+}
+#evaluate .item .branch{
+    padding-top: .2rem;
+    padding-bottom: .4rem;
+}
+#evaluate .view-all{
+    color: #06c1ae;
+    padding: 0.3rem 0;
+    background: url("../img/rightarrow-blue.png") no-repeat right .2rem center;
+    -webkit-background-size: 0.38rem 0.3rem;
+    -moz-background-size: 0.38rem 0.3rem;
+    -o-background-size: 0.38rem 0.3rem;
+    -ms-background-size: 0.38rem 0.3rem;
+    background-size: 0.38rem 0.3rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#evaluate .item{
+    border-bottom: 1px solid #ccc;
 }
 /*evaluate结束*/
 
