@@ -10,6 +10,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
+    text-shadow: none;
 }
 #city{
     width: 1.2rem;
@@ -65,6 +66,10 @@
     bottom: 0.3rem;
 }
 /*header结束*/
+
+.ui-content{
+    padding: 0;
+}
 
 /*banner开始*/
 #banner{

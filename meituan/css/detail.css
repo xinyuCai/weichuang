@@ -44,30 +44,37 @@
 }
 #header #collect .collect{
     background: url("../img/star.png") no-repeat center .1rem;
+    -webkit-background-size: 0.5rem 0.5rem;
+    -moz-background-size: 0.5rem 0.5rem;
+    -o-background-size: 0.5rem 0.5rem;
+    -ms-background-size: 0.5rem 0.5rem;
+    background-size: 0.5rem 0.5rem;
 }
 #header #collect .navigation{
-    background: url("../img/navigation.png") no-repeat center .1rem;
+    background: url("../img/navigation.png") no-repeat center .2rem;
+    -webkit-background-size: 0.35rem 0.35rem;
+    -moz-background-size: 0.35rem 0.35rem;
+    -o-background-size: 0.35rem 0.35rem;
+    -ms-background-size: 0.35rem 0.35rem;
+    background-size: 0.35rem 0.35rem;
 }
 #header #collect .collect,#header #collect .navigation{
     float: right;
     margin-right: 0.25rem;
     width: 0.6rem;
     height: 0.8rem;
-    font-size: 0.2rem;
+    font-size: 0.1rem;
     position: relative;
-    -webkit-background-size: 0.35rem 0.35rem;
-    -moz-background-size: 0.35rem 0.45rem;
-    -o-background-size: 0.45rem 0.45rem;
-    -ms-background-size: 0.45rem 0.45rem;
-    background-size: 0.35rem 0.35rem;
 }
 #header #collect .collect span{
     position: absolute;
-    top: .2rem;
+    top: .3rem;
+    margin-left: .05rem;
 }
 #header #collect .navigation span{
     position: absolute;
-    top: .2rem;
+    top: .3rem;
+    margin-left: .05rem;
 }
 /*header结束*/
 
@@ -147,7 +154,7 @@
     color: #6dbe03;
     margin-left: 0.8rem;
 }
-#explain span:nth-child(3){
+#explain span:last-child{
     background-image: url("../img/sold.png");
     margin-top: .2rem;
     color: #999;

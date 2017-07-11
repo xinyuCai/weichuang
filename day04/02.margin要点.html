@@ -12,6 +12,7 @@
             background: #ff0000;
             width: 400px;
             height: 400px;
+            margin-bottom: 50px;
             /*把div2定位到div1的下面*/
             /*法1：给div1加内边距，会使div1变大，不适用*/
             /*padding-top: 100px;*/
@@ -20,16 +21,35 @@
             overflow: hidden;
         }
         #div2{
+            float: left;
             background: #00ff00;
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             /*margin-top: 100px;*/
+            margin-right: 50px;
+        }
+        #div3{
+            float: left;
+            background: #fff;
+            width: 100px;
+            height: 100px;
+            /*横向margin相邻元素的外边距相加*/
+            margin-left: 50px;
+        }
+        #div4{
+            background: #00ff00;
+            width: 100px;
+            height: 100px;
+            /*纵向margin相邻元素的外边距取二者最大值*/
+            margin-top: 100px;
         }
     </style>
 </head>
 <body>
 <div id="div1">
     <div id="div2"></div>
+    <div id="div3"></div>
 </div>
+<div id="div4"></div>
 </body>
 </html>

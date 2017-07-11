@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1,#div2{
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+        }
+        #span1{
+            background: #00ff00;
+            /*margin-top/bottom不占空间*/
+            /*margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;*/
+            /*padding-top/bottom不占空间，但是背景却包含padding-top/bottom的宽度*/
+            background: #ffff00;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #span2{
+            background: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <span id="span1">span1</span><span id="span2">span2</span>
+    <div id="div2"></div>
+</body>
+</html>
