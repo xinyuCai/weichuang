@@ -213,8 +213,203 @@
 }
 /*evaluate-type infirm结束*/
 
+/*merchant开始*/
+#merchant{
+    padding: 0.2rem;
+}
+#merchant .info{
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ccc;
+}
+#merchant .contact{
+    display: -webkit-box;
+    display: -moz-box;
+    padding: .2rem 0;
+    border-bottom: 1px solid #ccc;
+}
+#merchant .contact .address{
+    padding-right: .2rem;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -o-box-flex: 2;
+    -ms-box-flex: 2;
+    -box-flex: 2;
+}
+#merchant .contact .address .name{
+    font-size: 0.32rem;
+    font-weight: bold;
+    padding-bottom: .15rem;
+}
+#merchant .contact .address .position{
+    white-space: nowrap;
+    padding-bottom: .15rem;
+}
+#merchant .contact .address .position{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: .15rem;
+}#merchant .contact .address .nearest{
+     background: url("../img/position.png") no-repeat left center;
+     -webkit-background-size: 0.28rem 0.28rem;
+     -moz-background-size: 0.28rem 0.28rem;
+     -o-background-size: 0.28rem 0.28rem;
+     -ms-background-size: 0.28rem 0.28rem;
+     background-size: 0.28rem 0.28rem;
+     padding-left: .4rem;
+     font-size: .25rem;
+     color: #EB8706;
+ }
+#merchant .contact .phone{
+    width: 1.4rem;
+    height: 1.2rem;
+    background: url(../img/phone.png) no-repeat center;
+    background-size: 0.38rem 0.38rem;
+    border-left: 1.5px solid rgba(204, 204, 204, 0.51);
+}
+#merchant .check{
+    color: #06c1ae;
+    padding: 0.3rem 0;
+    background: url("../img/rightarrow-blue.png") no-repeat right .2rem center;
+    -webkit-background-size: 0.38rem 0.3rem;
+    -moz-background-size: 0.38rem 0.3rem;
+    -o-background-size: 0.38rem 0.3rem;
+    -ms-background-size: 0.38rem 0.3rem;
+    background-size: 0.38rem 0.3rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+/*merchant结束*/
+
+/*combo开始*/
+#combo{
+    padding: 0 .2rem;
+}
+#combo h3{
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #ccc;
+}
+#combo .discount-coupon{
+    display: -webkit-box;
+    display: -moz-box;
+    border-bottom: 1px solid #ccc;
+}
+#combo .discount-coupon li{
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -o-box-flex: 2;
+    -ms-box-flex: 2;
+    -box-flex: 2;
+    padding: 0.22rem 0;
+    text-indent: .2rem;
+    border-right: 1px solid #ccc;
+}
+#combo .discount-coupon li:last-child{
+    border-right: none;
+}
+#combo .price{
+    border-bottom: 1px solid #ccc;
+    padding: 0.3rem 0.4rem;
+}
+#combo .price li{
+    list-style: disc;
+    margin-top: 0.1rem;
+}
+#combo .check{
+    color: #06c1ae;
+    padding: 0.3rem 0;
+    background: url("../img/rightarrow-blue.png") no-repeat right .2rem center;
+    -webkit-background-size: 0.38rem 0.3rem;
+    -moz-background-size: 0.38rem 0.3rem;
+    -o-background-size: 0.38rem 0.3rem;
+    -ms-background-size: 0.38rem 0.3rem;
+    background-size: 0.38rem 0.3rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+/*combo结束*/
+
+/*notice开始*/
+#notice{
+    padding: .2rem;
+    border-bottom: 1px solid #ccc;
+}
+#notice h3{
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #ccc;
+}
+#notice dt{
+    padding: .2rem 0;
+    color: #ff9712;
+    font-size: .30rem;
+}
+#notice dd{
+    padding-left: .2rem;
+}
+#notice ul{
+    margin-left: .4rem;
+}
+#notice li{
+    list-style: disc;
+    margin: .1rem 0;
+}
+/*notice结束*/
+
+/*evaluate开始*/
+#evaluate{
+    padding: .2rem;
+}
+#evaluate .evaluate-title{
+    height: 0.7rem;
+    border-bottom: 1px solid #ccc;
+}
+#evaluate .evaluate-title h3{
+    float: left;
+    padding-bottom: .2rem;
+}
+#evaluate .evaluate-title .star{
+    float: right;
+
+}
+#evaluate .evaluate-title .star img{
+    width: 0.32rem;
+    height: 0.32rem;
+}
 
 
+#evaluate .item .item-title{
+    padding: .2rem 0;
+}
+#evaluate .item .item-title .header{
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+#evaluate .item .item-title .header img{
+    width: .8rem;
+    height: .8rem;
+}
+#evaluate .item .item-title .desc{
+    float: left;
+    padding-left: .2rem;
+}
+#evaluate .item .item-title .desc img{
+    width: 0.32rem;
+    height: 0.32rem;
+}
+#evaluate .item .item-title .earnest{
+    width: 1rem;
+    height: 1rem;
+    float: right;
+}
+
+
+#evaluate .item .item-content{
+    margin-top: 1rem;
+    padding: .2rem 0;
+    border-top: 1px solid #ccc;
+}
+/*evaluate结束*/
 
 /*footer开始*/
 #footer{
