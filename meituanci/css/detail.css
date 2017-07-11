@@ -1,0 +1,481 @@
+/*herder开始*/
+#header{
+    height: 1.02rem;/* 1rem = 1*50px */
+    background: #06c1ae;
+    line-height: 1.02rem;
+    display: -webkit-box;
+    display: -moz-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-shadow: none;
+}
+#header #left{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+}
+#left img{
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+}
+#header #group{
+    -webkit-box-flex:4;
+    -moz-box-flex: 4;
+    -o-box-flex: 4;
+    -ms-box-flex: 4;
+    -box-flex: 4;
+    text-align: center;
+    color: #fff;
+    font-size: 0.36rem;
+}
+#header #collect{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+    color: #fff;
+}
+#header #collect .collect{
+    background: url("../img/star.png") no-repeat center .1rem;
+    -webkit-background-size: 0.5rem 0.5rem;
+    -moz-background-size: 0.5rem 0.5rem;
+    -o-background-size: 0.5rem 0.5rem;
+    -ms-background-size: 0.5rem 0.5rem;
+    background-size: 0.5rem 0.5rem;
+}
+#header #collect .navigation{
+    background: url("../img/navigation.png") no-repeat center .2rem;
+    -webkit-background-size: 0.35rem 0.35rem;
+    -moz-background-size: 0.35rem 0.35rem;
+    -o-background-size: 0.35rem 0.35rem;
+    -ms-background-size: 0.35rem 0.35rem;
+    background-size: 0.35rem 0.35rem;
+}
+#header #collect .collect,#header #collect .navigation{
+    float: right;
+    margin-right: 0.25rem;
+    width: 0.6rem;
+    height: 0.8rem;
+    font-size: 0.1rem;
+    position: relative;
+}
+#header #collect .collect span{
+    position: absolute;
+    top: .3rem;
+    margin-left: .05rem;
+}
+#header #collect .navigation span{
+    position: absolute;
+    top: .3rem;
+    margin-left: .05rem;
+}
+/*header结束*/
+
+.ui-content{
+    padding: 0;
+}
+
+/*banner开始*/
+#banner{
+    height: 4.5rem;
+    margin-top: 1.02rem;
+    background: url("../img/banner-xianyuxian.jpg");
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
+#banner .product-name{
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0.3rem;
+    color: #fff;
+}
+#banner .product-name p:first-child{
+    font-size: 0.38rem;
+    margin-bottom: 0.15rem;
+}
+/*banner结束*/
+
+/*price开始*/
+#price{
+    padding: 0.2rem 0.2rem;
+    border-bottom: 1px solid #ccc;
+}
+#price .preferential-price{
+    color: #06c1ae;
+    font-weight: bolder;
+ }
+#price .preferential-price span{
+    font-size: 0.66rem;
+}
+#price span:nth-child(2){
+    color: #999;
+}
+#price .buy{
+    width: 2.52rem;
+    height: 0.8rem;
+    background-color: #ff9900;
+    color: #fff;
+    text-shadow: none;
+    margin: 0;
+    border: 0;
+    outline: none;
+    float: right;
+}
+/*price结束*/
+
+/*explain开始*/
+#explain{
+    margin-bottom: 0.3rem;
+    padding: 0.28rem 0.2rem;
+    height: 1rem;
+}
+#explain .refund{
+    float: left;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 0.4rem 0.4rem;
+    padding-left: 0.5rem;
+
+}
+#explain span:nth-child(1){
+    background-image: url("../img/refund.png");
+    color: #6dbe03;
+ }
+#explain span:nth-child(2){
+    background-image: url("../img/right.png");
+    color: #6dbe03;
+    margin-left: 0.8rem;
+}
+#explain span:last-child{
+    background-image: url("../img/sold.png");
+    margin-top: .2rem;
+    color: #999;
+}
+/*explain结束*/
+
+/*evaluate-type star开始*/
+#evaluate-type #star{
+    padding: .2rem .2rem;
+    border-bottom: 1px solid #ccc;
+}
+#evaluate-type #star img{
+    width: 0.32rem;
+    height: 0.32rem;
+}
+#evaluate-type #star .score{
+    color: #ff9712;
+    font-weight: bold;
+}
+#evaluate-type #star .evaluate-num{
+    float: right;
+    margin-right: 0.2rem;
+}
+/*evaluate-type star结束*/
+
+/*evaluate-type type开始*/
+#evaluate-type #type{
+    height: 2.7rem;
+    padding:.1rem .2rem;
+}
+#evaluate-type #type span{
+    float: left;
+    color: #999;
+    padding: .1rem;
+    margin-top: 0.15rem;
+    margin-right: 0.1rem;
+    border-radius: 0.1rem;
+    border: 1px solid #999;
+}
+#evaluate-type #type span.hot{
+    float: left;
+    color: #ff9712;
+    border: 1px solid #ff9712;
+}
+/*evaluate-type type结束*/
+
+/*evaluate-type inform开始*/
+#evaluate-type #inform h3{
+    padding-left: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ccc;
+}
+#evaluate-type #inform p{
+    color: #eb8706;
+    padding: 0.25rem .2rem;
+}
+/*evaluate-type infirm结束*/
+
+/*merchant开始*/
+#merchant{
+    padding: 0.2rem;
+}
+#merchant .info{
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ccc;
+}
+#merchant .contact{
+    display: -webkit-box;
+    display: -moz-box;
+    padding: .2rem 0;
+    border-bottom: 1px solid #ccc;
+}
+#merchant .contact .address{
+    padding-right: .2rem;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -o-box-flex: 2;
+    -ms-box-flex: 2;
+    -box-flex: 2;
+}
+#merchant .contact .address .name{
+    font-size: 0.32rem;
+    font-weight: bold;
+    padding-bottom: .15rem;
+}
+#merchant .contact .address .position{
+    white-space: nowrap;
+    padding-bottom: .15rem;
+}
+#merchant .contact .address .position{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: .15rem;
+}#merchant .contact .address .nearest{
+     background: url("../img/position.png") no-repeat left center;
+     -webkit-background-size: 0.28rem 0.28rem;
+     -moz-background-size: 0.28rem 0.28rem;
+     -o-background-size: 0.28rem 0.28rem;
+     -ms-background-size: 0.28rem 0.28rem;
+     background-size: 0.28rem 0.28rem;
+     padding-left: .4rem;
+     font-size: .25rem;
+     color: #EB8706;
+ }
+#merchant .contact .phone{
+    width: 1.4rem;
+    height: 1.2rem;
+    background: url(../img/phone.png) no-repeat center;
+    background-size: 0.38rem 0.38rem;
+    border-left: 1.5px solid rgba(204, 204, 204, 0.51);
+}
+#merchant .check{
+    color: #06c1ae;
+    padding: 0.3rem 0;
+    background: url("../img/rightarrow-blue.png") no-repeat right .2rem center;
+    -webkit-background-size: 0.38rem 0.3rem;
+    -moz-background-size: 0.38rem 0.3rem;
+    -o-background-size: 0.38rem 0.3rem;
+    -ms-background-size: 0.38rem 0.3rem;
+    background-size: 0.38rem 0.3rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+/*merchant结束*/
+
+/*combo开始*/
+#combo{
+    padding: 0 .2rem;
+}
+#combo h3{
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #ccc;
+}
+#combo .discount-coupon{
+    display: -webkit-box;
+    display: -moz-box;
+    border-bottom: 1px solid #ccc;
+}
+#combo .discount-coupon li{
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -o-box-flex: 2;
+    -ms-box-flex: 2;
+    -box-flex: 2;
+    padding: 0.22rem 0;
+    text-indent: .2rem;
+    border-right: 1px solid #ccc;
+}
+#combo .discount-coupon li:last-child{
+    border-right: none;
+}
+#combo .price{
+    border-bottom: 1px solid #ccc;
+    padding: 0.3rem 0.4rem;
+}
+#combo .price li{
+    list-style: disc;
+    margin-top: 0.1rem;
+}
+#combo .check{
+    color: #06c1ae;
+    padding: 0.3rem 0;
+    background: url("../img/rightarrow-blue.png") no-repeat right .2rem center;
+    -webkit-background-size: 0.38rem 0.3rem;
+    -moz-background-size: 0.38rem 0.3rem;
+    -o-background-size: 0.38rem 0.3rem;
+    -ms-background-size: 0.38rem 0.3rem;
+    background-size: 0.38rem 0.3rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+/*combo结束*/
+
+/*notice开始*/
+#notice{
+    padding: .2rem;
+    border-bottom: 1px solid #ccc;
+}
+#notice h3{
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #ccc;
+}
+#notice dt{
+    padding: .2rem 0;
+    color: #ff9712;
+    font-size: .30rem;
+}
+#notice dd{
+    padding-left: .2rem;
+}
+#notice ul{
+    margin-left: .4rem;
+}
+#notice li{
+    list-style: disc;
+    margin: .1rem 0;
+}
+/*notice结束*/
+
+/*evaluate开始*/
+#evaluate{
+    padding: .2rem;
+}
+#evaluate .evaluate-title{
+    height: 0.7rem;
+    border-bottom: 1px solid #ccc;
+}
+#evaluate .evaluate-title h3{
+    float: left;
+    padding-bottom: .2rem;
+}
+#evaluate .evaluate-title .star{
+    float: right;
+}
+#evaluate .evaluate-title .star img{
+    width: 0.32rem;
+    height: 0.32rem;
+}
+
+
+#evaluate .item .item-title{
+    padding: .2rem 0;
+}
+#evaluate .item .item-title .header{
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+#evaluate .item .item-title .header img{
+    width: .8rem;
+    height: .8rem;
+}
+#evaluate .item .item-title .desc{
+    float: left;
+    padding-left: .2rem;
+}
+#evaluate .item .item-title .desc img{
+    width: 0.32rem;
+    height: 0.32rem;
+}
+#evaluate .item .item-title .earnest{
+    width: 1rem;
+    height: 1rem;
+    float: right;
+}
+
+
+#evaluate .item .item-content{
+    margin-top: .8rem;
+    padding: .2rem 0;
+}
+#evaluate.item .item-img{
+    margin: 0.2rem 0;
+}
+#evaluate.item .item-img img{
+    width: 1.1rem;
+    height: 1.1rem;
+    float: left;
+    margin-right: 0.1rem;
+}
+#evaluate .item .branch{
+    padding-top: .2rem;
+    padding-bottom: .4rem;
+}
+#evaluate .view-all{
+    color: #06c1ae;
+    padding: 0.3rem 0;
+    background: url("../img/rightarrow-blue.png") no-repeat right .2rem center;
+    -webkit-background-size: 0.38rem 0.3rem;
+    -moz-background-size: 0.38rem 0.3rem;
+    -o-background-size: 0.38rem 0.3rem;
+    -ms-background-size: 0.38rem 0.3rem;
+    background-size: 0.38rem 0.3rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#evaluate .item{
+    border-bottom: 1px solid #ccc;
+}
+/*evaluate结束*/
+
+/*footer开始*/
+#footer{
+    height: 1rem;
+    width: 100%;
+    padding: .2rem 0;
+    background: rgba(0,0,0,0.8);
+    display: -webkit-box;
+    display: -moz-box;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.8;
+    text-shadow: none;
+}
+#footer .logo,#footer div,#footer .download{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+}
+#footer .logo{
+    width: 1rem;
+    height: 1rem;
+    margin-left: .4rem;
+}
+#footer div{
+    color: #fff;
+    margin: .2rem 0 0 .3rem;
+}
+#footer .download{
+    width: 1.7rem;
+    height: .7rem;
+    background-color: transparent;
+    border: 1px solid #06c1ae;
+    color: #06c1ae;
+    padding: 0;
+    text-shadow: none;
+    display: inline-block;
+    font-size: .28rem;
+    margin-right: .4rem;
+}
+/*footer结束*/

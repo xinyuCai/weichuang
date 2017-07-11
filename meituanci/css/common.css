@@ -1,0 +1,24 @@
+/*样式重置开始*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+/*样式重置结束*/
+body{
+    font-size: 0.28rem;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    zoom: 1;
+}
