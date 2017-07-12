@@ -28,6 +28,13 @@
             <label for="password">密码:</label>
             <input type="password" name="password" id="password" placeholder="请输入密码">
             <span id="is-null" style="color: #f00;"></span>
+            <span style="color: #f00;">
+                <?php
+                    if(isset($error)){
+                        echo $error;
+                    }
+                ?>
+            </span>
             <div><br></div>
             <button class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-user">登录</button>
             <button class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-tag" id="register_page" type="button">新用户注册</button>
