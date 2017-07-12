@@ -13,6 +13,7 @@
     <script src="js/rem.js"></script>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
     <title>Document</title>
 </head>
@@ -26,8 +27,10 @@
             <input type="text" name="username" id="username" placeholder="请输入用户名">
             <label for="password">密码:</label>
             <input type="password" name="password" id="password" placeholder="请输入密码">
+            <span id="is-null" style="color: #f00;"></span>
+            <div><br></div>
             <button class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-user">登录</button>
-            <button class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-tag" type="button">注册</button>
+            <button class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-tag" id="register_page" type="button">新用户注册</button>
         </div>
     </form>
 </body>

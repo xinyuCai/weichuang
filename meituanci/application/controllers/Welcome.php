@@ -32,6 +32,10 @@ class Welcome extends CI_Controller {
         $this -> load -> view('login');
     }
 
+    public function register_page(){
+        $this -> load -> view('register');
+    }
+
     public function login()
     {
         $username = $this -> input -> post("username");
@@ -41,7 +45,7 @@ class Welcome extends CI_Controller {
         if($row){
             echo "登录成功";
         } else {
-            echo "登录失败";
+            redirect("welcome/login_page");
         }
     }
 }
