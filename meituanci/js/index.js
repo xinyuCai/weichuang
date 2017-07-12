@@ -26,7 +26,7 @@ $(document).on("pageinit",function(event){
         });
 
         $("#mine div:last-child").on("tap",function(){
-            location.href="welcome/login_page";
+            location.href="user/login_page";
         });
     });
 });

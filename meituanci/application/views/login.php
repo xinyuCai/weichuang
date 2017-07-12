@@ -21,7 +21,7 @@
     <div id="header">
         登录
     </div>
-    <form method="post" action="welcome/login" data-ajax="false" id="login-form">
+    <form method="post" action="user/login" data-ajax="false" id="login-form">
         <div class="ui-field-contain">
             <label for="username">用户名:</label>
             <input type="text" name="username" id="username" placeholder="请输入用户名">
