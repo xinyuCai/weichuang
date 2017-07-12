@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: #fff54c;
+            /*不换行*/
+            white-space: nowrap;
+            /*溢出部分隐藏*/
+            overflow: hidden;
+            /*用“...”代替隐藏的内容，与overflow合用*/
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <!--自动换行-->
+        dasD asda hjk DHAkj sdhjkah dJKa hdkh akDJH Ajkd hakjDH KJAS hdjk
+        <!--会被当成一个单词，不换行-->
+        asfghgfsdfksdlfksdlflaflkjfaklgjfdlkgjfldkjgslkgjladfkakljgdlkgjf
+        <!--自动换行-->
+        阿萨德飞机啦爱上邓丽君发送到建安费了解撒地方拉克丝大家发斯蒂芬卡上
+    </div>
+    <div id="div2">
+        阿萨德飞机啦爱上邓丽君发送到建安费了解撒地方拉克丝大家发斯蒂芬卡上
+    </div>
+</body>
+</html>
