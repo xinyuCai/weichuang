@@ -1,0 +1,87 @@
+/*header开始*/
+#header{
+    height: 1.02rem;
+    background: #06c1ae;
+    line-height: 1.02rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+#header #left{
+    float: left;
+}
+#left img{
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+}
+#header #home{
+    position: absolute;
+    top: .2rem;
+    right: .8rem;
+}
+/*header结束*/
+
+.ui-content{
+    background-color: #fff;
+    margin-top: 1.3rem;
+}
+
+/*猜你喜欢开始*/
+#guess{
+    background: #ffffff;
+    padding: 0 .2rem;
+}
+#guess h3{
+    color: #333;
+    font-size: .34rem;
+    border-bottom: 1px solid #ccc;
+    padding: .2rem 0;
+}
+#menu li{
+    height: 1.8rem;
+    padding: .3rem 0;
+    border-bottom: 1px solid #ccc;
+    display: -webkit-box;
+    display: -moz-box;
+}
+#menu .brand{
+    height: 1.8rem;
+    /*width: 1.8rem;
+    float: left;*/
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+}
+#menu .detail{
+    margin-left: .3rem;
+    /*float: left;*/
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -o-box-flex: 2;
+    -ms-box-flex: 2;
+    -box-flex: 2;
+}
+#menu .detail-name{
+    font-size: .3rem;
+    font-weight: 400;
+    padding: 0.1rem 0;
+}
+#menu .detail-desc{
+    margin-bottom: .2rem;
+}
+#menu .price{
+    font-size:.38rem;
+    color: #06c1ae;
+}
+#menu .sold{
+    margin-left: .15rem;
+}
+/*猜你喜欢结束*/

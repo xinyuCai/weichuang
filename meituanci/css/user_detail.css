@@ -1,0 +1,38 @@
+#header{
+    height: 1.02rem;
+    background: #06c1ae;
+    line-height: 1.02rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+#header #home{
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+}
+#username{
+    width: 1.2rem;
+    float: right;
+    color: #fff;
+    margin-right: .2rem;
+    padding-right: .2rem;
+    background: url(../img/downarrow.png) no-repeat center right;
+    -webkit-background-size: 0.32rem 0.32rem;
+    -moz-background-size: 0.32rem 0.32rem;
+    -o-background-size: 0.32rem 0.32rem;
+    -ms-background-size: 0.32rem 0.32rem;
+    background-size: 0.32rem 0.32rem;
+}
+#clear{
+    margin-top: 1.02rem;
+    padding-bottom: .5rem;
+}
+h2{
+    margin-top: .2rem;
+    margin-left: .1rem;
+}

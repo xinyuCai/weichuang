@@ -1,0 +1,245 @@
+/*header开始*/
+#header{
+    height: 1.02rem;/* 1rem = 1*50px */
+    background: #06c1ae;
+    line-height: 1.02rem;
+    display: -webkit-box;
+    display: -moz-box;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-shadow: none;
+}
+#city{
+    width: 1.2rem;
+    margin: 0 0.2rem;
+    color: #fff;
+    background: url(../img/downarrow.png) no-repeat 0.9rem center;
+    -webkit-background-size: 0.32rem 0.32rem;
+    -moz-background-size: 0.32rem 0.32rem;
+    -o-background-size: 0.32rem 0.32rem;
+    -ms-background-size: 0.32rem 0.32rem;
+    background-size: 0.32rem 0.32rem;
+}
+#search{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+}
+#search input{
+    width:100%;
+    height: 0.64rem;
+    color: #fff;
+    outline: none;
+    border:0;
+    border-radius: 0.06rem;
+    text-indent: 0.5rem;
+    background: #05a494 url(../img/magnify.png) no-repeat 0.1rem center;
+    -webkit-background-size: 0.32rem 0.32rem;
+    background-size: 0.32rem 0.32rem;
+}
+#search input::-webkit-input-placeholder{/* 伪元素选择器 */
+    color: #fff;
+    opacity: 0.8;
+}
+#mine{
+    color: #fff;
+    width: 1.2rem;
+    margin: 0 0.2rem;
+    text-align: center;
+}
+/*#mine div{
+    float: left;
+    width: 0.6rem;
+    height: 1rem;
+    position: relative;
+}
+#mine div:first-child{
+    background: url(../img/mine.png) no-repeat center 0.1rem;
+    -webkit-background-size: 0.48rem 0.48rem;
+    -moz-background-size: 0.48rem 0.48rem;
+    -o-background-size: 0.48rem 0.48rem;
+    -ms-background-size: 0.48rem 0.48rem;
+    background-size: 0.48rem 0.48rem;
+}
+#mine div:last-child{
+    background: url(../img/login.png) no-repeat right 0.1rem;
+    -webkit-background-size: 0.48rem 0.48rem;
+    -moz-background-size: 0.48rem 0.48rem;
+    -o-background-size: 0.48rem 0.48rem;
+    -ms-background-size: 0.48rem 0.48rem;
+    background-size: 0.48rem 0.48rem;
+}
+#mine span{
+    height:0.5rem;
+    font-size: .15rem;
+    position: absolute;
+    bottom: 0.3rem;
+}*/
+/*header结束*/
+
+.ui-content{
+    padding: 0;
+}
+
+/*banner开始*/
+#banner{
+    height: 1rem;
+    background: #f0efed url(../img/banner.jpg) no-repeat center;
+    -webkit-background-size: 6.4rem 1rem;
+    -moz-background-size: 6.4rem 1rem;
+    -o-background-size: 6.4rem 1rem;
+    -ms-background-size: 6.4rem 1rem;
+    background-size: 6.4rem 1rem;
+
+    margin-top: 1.02rem;
+}
+/*banner结束*/
+
+/*guide开始*/
+#guide{
+    height: 3.6rem;
+    width: 100%;
+    overfloat: hidden;
+    position: relative;
+    background: #ffffff;
+}
+#guide ul{
+    width:200%;
+    position: absolute;
+    left: 0;
+    -webkit-transition: left 1s ease;
+    -moz-transition: left 1s ease;
+    -ms-transition: left 1s ease;
+    -o-transition: left 1s ease;
+    transition: left 1s ease;
+}
+#guide li{
+    width:10%;
+    text-align: center;
+    float: left;
+    margin-top: 0.2rem;
+}
+#guide img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+#nav{
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav span{
+    width: 0.16rem;
+    height: 0.16rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 0.2rem;
+    background-color: #f0efee;
+}
+#nav span.active{
+    background: #06c1ae;
+}
+/*guide结束*/
+
+/*导购开始*/
+#activity{
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin: 0.3rem 0;
+    background-color: #fff;
+}
+#activity a{
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+    opacity: 0.9;
+}
+#activity p{
+    font-weight: normal;
+    color: #333;
+}
+#activity img{
+    width: 1.24rem;
+    height: 1.24rem;
+}
+#activity h3{
+    margin: 0.2rem 0;
+}
+#activity .friend{
+    color: #55a40f;
+}
+#activity .low-price{
+    color: #ff3f0d;
+}
+#activity .quick-meal{
+    color: #f84fa7;
+}
+/*导购结束*/
+
+/*猜你喜欢开始*/
+#guess{
+    background: #ffffff;
+    padding: 0 .2rem;
+}
+#guess h3{
+    color: #333;
+    font-size: .34rem;
+    border-bottom: 1px solid #ccc;
+    padding: .2rem 0;
+}
+#menu li{
+    height: 1.8rem;
+    padding: .3rem 0;
+    border-bottom: 1px solid #ccc;
+    display: -webkit-box;
+    display: -moz-box;
+}
+#menu .brand{
+    height: 1.8rem;
+    /*width: 1.8rem;
+    float: left;*/
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-box-flex: 1;
+    -box-flex: 1;
+}
+#menu .detail{
+    margin-left: .3rem;
+    /*float: left;*/
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -o-box-flex: 2;
+    -ms-box-flex: 2;
+    -box-flex: 2;
+}
+#menu .detail-name{
+    font-size: .3rem;
+    font-weight: 400;
+    padding: 0.1rem 0;
+}
+#menu .detail-desc{
+    margin-bottom: .2rem;
+}
+#menu .price{
+    font-size:.38rem;
+    color: #06c1ae;
+}
+#menu .sold{
+    margin-left: .15rem;
+}
+/*猜你喜欢结束*/

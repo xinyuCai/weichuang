@@ -1,0 +1,63 @@
+/*header开始*/
+#header{
+    height: 1.02rem;
+    background: #06c1ae;
+    line-height: 1.02rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+#header #left{
+    float: left;
+}
+#left img{
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+}
+#header #home{
+    position: absolute;
+    top: .2rem;
+    right: .8rem;
+}
+/*header结束*/
+
+.ui-content{
+    background-color: #fff;
+    margin-top: 1.3rem;
+}
+
+/*score开始*/
+.score{
+    border-bottom: 1px solid #ccc;
+    padding: .2rem 0;
+}
+.score .star{
+    padding: .2rem 0;
+}
+.score .star img{
+    width: .5rem;
+    height: .5rem;
+    margin-right: .3rem;
+}
+.score .grade{
+    margin-left: 1rem;
+    color: #f49231;
+}
+/*score结束*/
+
+/*comment开始*/
+#comment{
+    margin-top: .6rem;
+}
+/*comment结束*/
+
+#submit{
+    margin-top: .4rem;
+    margin-top: .8rem;
+}

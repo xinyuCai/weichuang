@@ -1,0 +1,78 @@
+/*header开始*/
+#header{
+    height: 1.02rem;/* 1rem = 1*50px */
+    background: #06c1ae;
+    line-height: 1.02rem;
+    display: -webkit-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-shadow: none;
+}
+#left{
+    width: 1.2rem;
+}
+#left img{
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-top: 0.3rem;
+}
+#group{
+    -webkit-box-flex: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 0.36rem;
+}
+/*header结束*/
+
+.ui-content{
+    margin-top: 1.02rem;
+}
+#title{
+    margin: .4rem 0 .3rem .2rem;
+    font-size: .34rem;
+}
+.order-form{
+    background-color: #fff;
+    height: 0.9rem;
+    font-size: .3rem;
+    padding: 0 .1rem;
+    line-height: 0.9rem;
+    border-bottom: 1px solid #ccc;
+}
+.order-form span{
+    float:right;
+}
+.order-form #num{
+    float:right;
+}
+.order-form #num button{
+    width: .6rem;
+    height: .6rem;
+    float: left;
+    margin-right: .1rem;
+    margin-left: .1rem;
+    background-color: #fff;
+    border: 0.1px solid #06c1ae;
+    box-shadow: none;
+    padding: 0;
+    color: #06c1ae;
+}
+.order-form #num div{/*input上套的div*/
+    float: left;
+}
+.order-form #num input{
+    text-align: center;
+    padding: 0;
+    min-height: 2em;
+    width: .8rem;
+}
+.clear{
+    clear: both;
+}
+
+#submit{
+    margin-top: .5rem;
+}
